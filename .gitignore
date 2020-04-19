@@ -1,3 +1,7 @@
 # Default ignored files
-/build/*
+/build/classes
+/build/generated
+/build/reports
+/build/test-results
+/build/tmp
 /.idea/*

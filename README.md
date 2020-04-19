@@ -61,18 +61,14 @@ fiscalMonth.getFiscalMonthOfYear(Month.JULY, LocalDate.of(2020,7,4));
 
 To understand the various methods and data type of the parameters in this library, please go through the Java Doc of this package.
 
-
 ### Integration
 
-To use this project just declare the following dependency inside your POM:
+Sooner the project will be made available in Maven Central. Until then use the jar as dependency in your project.  
 
-* Code Block
+###Build
+You can clone the repository and build the jar from source code using gradle
 
-```xml
-<dependency>
-  <groupId>{project-group}</groupId>
-  <artifactId>{project-name}</artifactId>
-  <version>${version.fiscal-year}</version>
-</dependency>
+```shell
+cd <Project Directory>
+gradlew build
 ```
-
