@@ -35,7 +35,7 @@ This package has different classes
 * FiscalHalfYear
 * FiscalYear
 
-based on the level of the time period which needs to be dealt of. 
+based on the level of the time period which needs to be dealt with. 
 
 **For instance:** Given the starting month of Fiscal Calendar as April and you wanted to know the Fiscal day of year for the given date "2020-07-04", you can use *"FiscalDate"* class by intantiating it and call the method *"getFiscalDayOfYear"*
 
