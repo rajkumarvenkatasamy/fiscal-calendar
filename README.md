@@ -8,12 +8,12 @@ I have developed this library as part of another project which deals with buildi
 
 If you want to deal with the attributes related to Fiscal calendar such as: 
 
-* Fiscal Day of Year
-* Fiscal Month
-* Fiscal Week of Year
-* Fiscal Quarter
-* Fiscal Half
-* Fiscal Year
+- Fiscal Day of Year
+- Fiscal Month
+- Fiscal Week of Year
+- Fiscal Quarter
+- Fiscal Half
+- Fiscal Year
 
 then you could make use of this simple library.
 
@@ -49,9 +49,9 @@ fiscalDate.getFiscalDayOfYear(Month.APRIL, LocalDate.of(2020,7,4));
 
 Other methods in FiscalDate class are
 
-* getFirstFiscalDate(java.time.Month startMonthOfFiscalCalendar, java.time.LocalDate inputDate)  
-* getLastFiscalDate(java.time.Month startMonthOfFiscalCalendar, java.time.LocalDate inputDate)  
-* getFirstFiscalDateInCurrentCalendarYear(java.time.Month startMonthOfFiscalCalendar) 
+- getFirstFiscalDate(java.time.Month startMonthOfFiscalCalendar, java.time.LocalDate inputDate)  
+- getLastFiscalDate(java.time.Month startMonthOfFiscalCalendar, java.time.LocalDate inputDate)  
+- getFirstFiscalDateInCurrentCalendarYear(java.time.Month startMonthOfFiscalCalendar) 
 
 Similarly to get the Fiscal Month of year for a given date, use the *"FiscalMonth"* class and its method *"getFiscalMonthOfYear"*
 
@@ -67,9 +67,9 @@ To understand the various methods and data type of the parameters in this librar
 
 ### Integration
 
-Sooner the project will be made available in Maven Central. Until then use the jar available in **"build/libs"** directory as dependency in your project.  
+Sooner the project will be made available in Maven Central. Until then use the jar available in **"build/libs"** directory as dependency in your project  
 
-###Build
+### Build
 You can clone the repository and build the jar from source code using gradle
 
 ```shell
