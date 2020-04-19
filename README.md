@@ -9,10 +9,10 @@ I have developed this library as part of another project which deals with buildi
 If you want to deal with the attributes related to Fiscal calendar such as: 
 
 - Fiscal Day of Year
-- Fiscal Month
+- Fiscal Month of Year
 - Fiscal Week of Year
-- Fiscal Quarter
-- Fiscal Half
+- Fiscal Quarter of year
+- Fiscal Half of Year
 - Fiscal Year
 
 then you could make use of this simple library.
