@@ -47,7 +47,11 @@ fiscalDate.getFiscalDayOfYear(Month.APRIL, LocalDate.of(2020,7,4));
 ```
 ---
 
-The inputs should be of compatible to java.time package and its methods. For details, see the Java Doc for this library.
+Other methods in FiscalDate class are
+
+* getFirstFiscalDate(java.time.Month startMonthOfFiscalCalendar, java.time.LocalDate inputDate)  
+* getLastFiscalDate(java.time.Month startMonthOfFiscalCalendar, java.time.LocalDate inputDate)  
+* getFirstFiscalDateInCurrentCalendarYear(java.time.Month startMonthOfFiscalCalendar) 
 
 Similarly to get the Fiscal Month of year for a given date, use the *"FiscalMonth"* class and its method *"getFiscalMonthOfYear"*
 
@@ -59,7 +63,7 @@ fiscalMonth.getFiscalMonthOfYear(Month.JULY, LocalDate.of(2020,7,4));
 ```
 ---
 
-To understand the various methods and data type of the parameters in this library, please go through the Java Doc of this package.
+To understand the various methods and data type of the parameters in this library, you might need to clone the repository in your machine to view the *JavaDoc/index.html* file in browser. 
 
 ### Integration
 
