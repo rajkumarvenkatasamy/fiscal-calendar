@@ -63,7 +63,7 @@ To understand the various methods and data type of the parameters in this librar
 
 ### Integration
 
-Sooner the project will be made available in Maven Central. Until then use the jar as dependency in your project.  
+Sooner the project will be made available in Maven Central. Until then use the jar available in build directory as dependency in your project.  
 
 ###Build
 You can clone the repository and build the jar from source code using gradle
