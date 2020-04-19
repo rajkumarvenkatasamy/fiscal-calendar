@@ -7,27 +7,27 @@ import java.util.Map;
 
 public class FiscalMonth {
 
-    protected Map<Month, Integer> getFiscalMonthAndValue(Month fiscalCalendarStartingMonth) {
+    protected Map<Month, Integer> getFiscalMonthAndValue(Month startMonthOfFiscalCalendar) {
         Map<Month, Integer> fiscalCalendarMap = new HashMap<>();
 
         for (int i = 0; i <= 11; i++) {
-            fiscalCalendarMap.put(fiscalCalendarStartingMonth.plus(i), i + 1);
+            fiscalCalendarMap.put(startMonthOfFiscalCalendar.plus(i), i + 1);
         }
         return fiscalCalendarMap;
     }
 
-    public int getFiscalMonthOfYear(Month fiscalCalendarStartingMonth, LocalDate inputDate) {
+    public int getFiscalMonthOfYear(Month startMonthOfFiscalCalendar, LocalDate inputDate) {
         int fiscalMonth;
         FiscalMonth fiscalMonthObj = new FiscalMonth();
-        Map<Month, Integer> hm = fiscalMonthObj.getFiscalMonthAndValue(fiscalCalendarStartingMonth);
+        Map<Month, Integer> hm = fiscalMonthObj.getFiscalMonthAndValue(startMonthOfFiscalCalendar);
         fiscalMonth = hm.get(inputDate.getMonth());
 
         return fiscalMonth;
     }
 
-    public Month getLastFiscalMonth(Month fiscalCalendarStartingMonth) {
+    public Month getLastFiscalMonth(Month startMonthOfFiscalCalendar) {
         Month lastFiscalMonth;
-        lastFiscalMonth = fiscalCalendarStartingMonth.plus(11);
+        lastFiscalMonth = startMonthOfFiscalCalendar.plus(11);
         return lastFiscalMonth;
     }
 

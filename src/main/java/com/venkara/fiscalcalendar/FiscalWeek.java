@@ -6,12 +6,12 @@ import java.time.temporal.ChronoUnit;
 
 public class FiscalWeek {
 
-    public int getFiscalWeekOfYear(Month fiscalCalendarStartingMonth, LocalDate inputDate) {
+    public int getFiscalWeekOfYear(Month startMonthOfFiscalCalendar, LocalDate inputDate) {
         int fiscalWeekOfYear;
         FiscalDate fiscalDate = new FiscalDate();
 
         LocalDate firstFiscalDateBasedOnGivenDate =
-                fiscalDate.getFirstFiscalDate(fiscalCalendarStartingMonth, inputDate);
+                fiscalDate.getFirstFiscalDate(startMonthOfFiscalCalendar, inputDate);
         fiscalWeekOfYear = (int) (ChronoUnit.WEEKS.between(firstFiscalDateBasedOnGivenDate, inputDate) + 1);
         return fiscalWeekOfYear;
     }

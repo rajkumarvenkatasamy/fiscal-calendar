@@ -27,10 +27,10 @@ public class FiscalDate {
         return firstFiscalDateBasedOnGivenDate;
     }
 
-    public int getFiscalDayOfYear(Month fiscalCalendarStartingMonth, LocalDate inputDate) {
+    public int getFiscalDayOfYear(Month startMonthOfFiscalCalendar, LocalDate inputDate) {
         int fiscalDay;
         LocalDate firstFiscalDateBasedOnGivenDate;
-        firstFiscalDateBasedOnGivenDate = getFirstFiscalDate(fiscalCalendarStartingMonth, inputDate);
+        firstFiscalDateBasedOnGivenDate = getFirstFiscalDate(startMonthOfFiscalCalendar, inputDate);
         fiscalDay = (int) (ChronoUnit.DAYS.between(firstFiscalDateBasedOnGivenDate, inputDate) + 1);
         return fiscalDay;
     }

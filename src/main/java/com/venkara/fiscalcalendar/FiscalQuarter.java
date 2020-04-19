@@ -6,10 +6,10 @@ import java.util.Map;
 
 public class FiscalQuarter {
 
-    public int getFiscalQuarterOfYear(Month fiscalCalendarStartingMonth, LocalDate inputDate) {
+    public int getFiscalQuarterOfYear(Month startMonthOfFiscalCalendar, LocalDate inputDate) {
         int fiscalQuarter;
         FiscalMonth fiscalMonth = new FiscalMonth();
-        Map<Month, Integer> hm = fiscalMonth.getFiscalMonthAndValue(fiscalCalendarStartingMonth);
+        Map<Month, Integer> hm = fiscalMonth.getFiscalMonthAndValue(startMonthOfFiscalCalendar);
         fiscalQuarter = getFiscalQuarterOfYear(hm.get(inputDate.getMonth()));
         return fiscalQuarter;
     }
