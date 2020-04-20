@@ -1,4 +1,4 @@
-package com.venkara.fiscalcalendar;
+package com.github.rajkumarvenkatasamy.fiscalcalendar;
 
 import java.time.LocalDate;
 import java.time.Month;

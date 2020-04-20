@@ -1,4 +1,4 @@
-package com.venkara.fiscalcalendar;
+package com.github.rajkumarvenkatasamy.fiscalcalendar;
 
 import org.junit.Assert;
 import org.junit.Test;

@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group 'com.venkara'
+group 'com.github.rajkumarvenkatasamy'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
