@@ -5,5 +5,7 @@
 /build/test-results
 /build/tmp
 /.idea/*
-/.gradle/*
 /gradle.properties
+/build.gradle.maven.release
+/build.gradle.orig
+/.gradle/
