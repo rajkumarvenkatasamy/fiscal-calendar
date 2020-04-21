@@ -3,7 +3,8 @@ plugins {
 }
 
 group 'com.github.rajkumarvenkatasamy'
-version '1.0-SNAPSHOT'
+archivesBaseName = "fiscal-calendar"
+version '1.0.0'
 
 sourceCompatibility = 1.8
 
