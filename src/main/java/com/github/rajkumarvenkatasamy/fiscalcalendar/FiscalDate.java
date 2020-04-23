@@ -40,7 +40,6 @@ public class FiscalDate {
 
         lastFiscalDate = getFirstFiscalDate(startMonthOfFiscalCalendar, inputDate).plusMonths(11)
                 .with(TemporalAdjusters.lastDayOfMonth());
-        System.out.println(lastFiscalDate);
         return lastFiscalDate;
     }
 

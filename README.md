@@ -28,6 +28,7 @@ Since the starting month of a Fiscal calendar can vary based on the choice of th
 
 This package has different classes 
 
+* FiscalCalendar
 * FiscalDate
 * FiscalWeek
 * FiscalMonth
@@ -63,6 +64,25 @@ fiscalMonth.getFiscalMonthOfYear(Month.JULY, LocalDate.of(2020,7,4));
 ```
 ---
 
+If you want to get all the attributes of Fiscal Calendar library, then use the 
+*"FiscalCalendar"* as shown below:
+
+*Java code snippet*
+```java
+        FiscalCalendar fiscalCalendarBuilder = new FiscalCalendar.FiscalCalendarBuilder(
+                Month.APRIL, LocalDate.of(2020,7,4)).build();
+
+        fiscalCalendarBuilder.getFirstFiscalDate();
+        fiscalCalendarBuilder.getLastFiscalDate();
+        fiscalCalendarBuilder.getFiscalDayOfYear();
+        fiscalCalendarBuilder.getFiscalWeekOfYear();
+        fiscalCalendarBuilder.getFiscalMonthOfYear();
+        fiscalCalendarBuilder.getLastFiscalMonth();
+        fiscalCalendarBuilder.getFiscalQuarterOfYear();
+        fiscalCalendarBuilder.getFiscalHalfOfYear();
+        fiscalCalendarBuilder.getFiscalYear();  
+```
+
 To understand the various methods and data type of the parameters in this library, you might need to clone the repository in your machine to view the *JavaDoc/index.html* file in browser. 
 
 ### Integration
@@ -72,28 +92,50 @@ Maven Central Repository :
 https://mvnrepository.com/artifact/com.github.rajkumarvenkatasamy/fiscal-calendar/
 
 pom.xml
+
 ```xml
 <!-- https://mvnrepository.com/artifact/com.github.rajkumarvenkatasamy/fiscal-calendar -->
 <dependency>
     <groupId>com.github.rajkumarvenkatasamy</groupId>
     <artifactId>fiscal-calendar</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
+</dependency>
+```
+For Documentation Integration
+
+```xml
+<dependency>
+  <groupId>com.github.rajkumarvenkatasamy</groupId>
+  <artifactId>fiscal-calendar</artifactId>
+  <version>1.0.1</version>
+  <classifier>javadoc</classifier>
 </dependency>
 ```
 
-build.gradle
+For Source code integration
 
-```gradle
+```xml
+<dependency>
+  <groupId>com.github.rajkumarvenkatasamy</groupId>
+  <artifactId>fiscal-calendar</artifactId>
+  <version>1.0.1</version>
+  <classifier>sources</classifier>
+</dependency>
+```
+
+Gradle Integration : build.gradle
+
+```groovy
 // https://mvnrepository.com/artifact/com.github.rajkumarvenkatasamy/fiscal-calendar
-compile group: 'com.github.rajkumarvenkatasamy', name: 'fiscal-calendar', version: '1.0.0'
+compile group: 'com.github.rajkumarvenkatasamy', name: 'fiscal-calendar', version: '1.0.1'
 ```
 
 You could also use the jar available in **"build/libs"** directory as dependency in your project  
 
-### Build
+### Builds
 You can clone the repository and build the jar from source code using gradle
 
-```shell
+```shell script
 cd <Project Directory>
 gradlew build
 ```
