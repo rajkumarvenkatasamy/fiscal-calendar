@@ -67,7 +67,28 @@ To understand the various methods and data type of the parameters in this librar
 
 ### Integration
 
-Sooner the project will be made available in Maven Central. Until then use the jar available in **"build/libs"** directory as dependency in your project  
+Maven Central Repository :
+
+https://mvnrepository.com/artifact/com.github.rajkumarvenkatasamy/fiscal-calendar/
+
+pom.xml
+```xml
+<!-- https://mvnrepository.com/artifact/com.github.rajkumarvenkatasamy/fiscal-calendar -->
+<dependency>
+    <groupId>com.github.rajkumarvenkatasamy</groupId>
+    <artifactId>fiscal-calendar</artifactId>
+    <version>1.0.0</version>
+</dependency>
+```
+
+build.gradle
+
+```gradle
+// https://mvnrepository.com/artifact/com.github.rajkumarvenkatasamy/fiscal-calendar
+compile group: 'com.github.rajkumarvenkatasamy', name: 'fiscal-calendar', version: '1.0.0'
+```
+
+You could also use the jar available in **"build/libs"** directory as dependency in your project  
 
 ### Build
 You can clone the repository and build the jar from source code using gradle
